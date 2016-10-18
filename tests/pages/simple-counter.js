@@ -6,7 +6,7 @@ import {
 } from 'ember-cli-page-object';
 
 export default create({
-  visit: visitable('/'),
+  visit: visitable('/counter'),
 
   counter: {
     scope: '.simple-counter',

@@ -7,6 +7,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('counter');
+  this.route('multiplier');
 });
 
 export default Router;
