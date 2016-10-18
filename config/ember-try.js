@@ -1,4 +1,4 @@
-/*jshint node:true*/
+/*eslint-env node*/
 module.exports = {
   scenarios: [
     {
@@ -8,13 +8,13 @@ module.exports = {
       }
     },
     {
-      name: 'ember-1.13',
+      name: 'ember-2.5',
       bower: {
         dependencies: {
-          'ember': '~1.13.0'
+          'ember': '~2.5.0'
         },
         resolutions: {
-          'ember': '~1.13.0'
+          'ember': '~2.5.0'
         }
       }
     },
