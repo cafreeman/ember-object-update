@@ -96,7 +96,7 @@ actions: {
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd ember-update`
+* `cd ember-object-update`
 * `npm install`
 * `bower install`
 

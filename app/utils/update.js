@@ -1,1 +1,1 @@
-export { default } from 'ember-update/utils/update';
+export { default } from 'ember-object-update/utils/update';

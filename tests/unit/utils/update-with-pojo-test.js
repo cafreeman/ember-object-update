@@ -5,7 +5,7 @@ import {
   beforeEach,
   it
 } from 'mocha';
-import update from 'ember-update/utils/update';
+import update from 'ember-object-update/utils/update';
 import Ember from 'ember';
 
 const { get } = Ember;
