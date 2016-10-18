@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-update'
+  name: 'ember-object-update'
 };
