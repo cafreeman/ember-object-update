@@ -1,0 +1,9 @@
+<ul data-test-multiplier-list>
+  {{#each collection as |item|}}
+    <li data-test-multiplier-list-item>{{item}}</li>
+  {{/each}}
+</ul>
+
+{{input class="array-multiplier-input" type="text" value=multiplier}}
+
+<button data-test-multiplier-button type="button" {{action 'multiply' multiplier}}>Multiply</button>
