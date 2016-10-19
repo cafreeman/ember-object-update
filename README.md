@@ -35,6 +35,8 @@ This'll probably be easier if you see it in action, so check out the examples be
 
 ### Doubling all the values in an array property
 ```js
+import update from 'ember-object-update';
+
 let obj = Ember.Object.create({
     a: [1, 2, 3]
   });
@@ -51,6 +53,8 @@ Also, it works in components!
 
 ### Updating component properties from an action
 ```js
+import update from 'ember-object-update';
+
 export default Ember.Component.extend({
   layout,
 
@@ -70,6 +74,8 @@ export default Ember.Component.extend({
 
 ### Crazy nested things (plus array indexes!)
 ```js
+import update from 'ember-object-update';
+
 let crazyNestedPOJO = {
   a: {
     b: [
@@ -85,6 +91,8 @@ update(crazyNestedPOJO, 'a.b.0.c', oldValue => oldValue.toUpperCase());
 
 ### Closing over local variables in your updater function
 ```js
+import update from 'ember-object-update';
+
 actions: {
   multiply(multiplier) {
     // close over the `multiplier` value when pass our updater function into `update`
@@ -95,12 +103,9 @@ actions: {
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-object-update`
-* `npm install`
-* `bower install`
+`ember install ember-object-update`
 
-## Running
+## Running the dummy app
 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
