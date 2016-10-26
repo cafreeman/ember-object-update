@@ -1,7 +1,7 @@
-
 import Ember from 'ember';
+import assign from 'ember-assign-polyfill';
 
-const { get, setProperties, assign } = Ember;
+const { get, setProperties } = Ember;
 
 // Usage: update(person, 'name', (name) => name.toUpperCase())
 export default function update(obj, key, updateFn) {
