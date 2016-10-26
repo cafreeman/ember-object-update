@@ -1,6 +1,6 @@
 {
   "name": "ember-object-update",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Update object properties with functions!",
   "directories": {
     "doc": "doc",
