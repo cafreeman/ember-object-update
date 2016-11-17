@@ -1,5 +1,11 @@
 # ember-object-update
 
+Update Ember objects with ease
+
+## Installation
+
+`ember install ember-object-update`
+
 Ever get tired of dealing with `Ember.get` and `Ember.set` when you're trying to update properties on an object, or component?
 
 Does this look familiar?
@@ -100,10 +106,6 @@ actions: {
   }
 }
 ```
-
-## Installation
-
-`ember install ember-object-update`
 
 ## Running the dummy app
 
