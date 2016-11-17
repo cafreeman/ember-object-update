@@ -1,6 +1,6 @@
 import Ember from 'ember';
 import layout from '../templates/components/simple-counter';
-import update from 'ember-object-update/utils/update';
+import update from 'ember-object-update';
 
 export default Ember.Component.extend({
   layout,
