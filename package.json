@@ -1,6 +1,6 @@
 {
   "name": "ember-object-update",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Update Ember objects with ease",
   "keywords": [
     "ember-addon",
