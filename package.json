@@ -1,17 +1,22 @@
 {
   "name": "ember-object-update",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.3.0",
+  "description": "Update Ember objects with ease",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "object",
+    "ember",
+    "emberjs",
+    "utils",
+    "functional"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Chris Freeman",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/cafreeman/ember-object-update",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
