@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-const { get, set, assign } = Ember;
+const { get, set } = Ember;
 
 // Usage: update(person, 'name', (name) => name.toUpperCase())
 export default function update(obj, key, updateFn) {
