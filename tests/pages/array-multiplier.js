@@ -1,11 +1,11 @@
+import $ from 'jquery';
+
 import {
   create,
   visitable,
   fillable,
   clickable
 } from 'ember-cli-page-object';
-
-import Ember from 'ember';
 
 export default create({
   visit: visitable('/multiplier'),
@@ -14,8 +14,8 @@ export default create({
     scope: '.array-multiplier',
 
     listItems: () => {
-      return Ember.$('[data-test-multiplier-list-item]')
-        .map((i, v) => parseInt(Ember.$(v).text()), 10)
+      return $('[data-test-multiplier-list-item]')
+        .map((i, v) => parseInt($(v).text()), 10)
         .toArray();
     },
 

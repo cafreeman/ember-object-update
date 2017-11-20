@@ -1,8 +1,8 @@
-import Ember from 'ember';
+import Component from '@ember/component';
 import layout from '../templates/components/array-multiplier';
 import update from 'ember-object-update/utils/update';
 
-export default Ember.Component.extend({
+export default Component.extend({
   layout,
 
   classNames: ['array-multiplier'],
