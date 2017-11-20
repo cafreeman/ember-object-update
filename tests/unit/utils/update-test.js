@@ -1,4 +1,5 @@
 /* jshint expr:true */
+import EmberObject from '@ember/object';
 import { expect } from 'chai';
 import {
   describe,
@@ -6,12 +7,11 @@ import {
   it
 } from 'mocha';
 import update from 'ember-object-update';
-import Ember from 'ember';
 
 describe('update with a basic ember object', function() {
   let emberObj;
   beforeEach(function() {
-    emberObj = Ember.Object.create({
+    emberObj = EmberObject.create({
       firstName: "John",
       lastName: "Doe",
       someBoolean: false
@@ -44,18 +44,18 @@ describe('update with a basic ember object', function() {
 describe('update with a nested ember object', function() {
   let nestedObj;
   beforeEach(function() {
-    nestedObj = Ember.Object.create({ a: { b: { c: 2 } } });
+    nestedObj = EmberObject.create({ a: { b: { c: 2 } } });
   });
 
   it('can update a nested property', function() {
-    let expected = Ember.Object.create({ a: { b: { c: 4 } } });
+    let expected = EmberObject.create({ a: { b: { c: 4 } } });
     const updated = update(nestedObj, 'a.b.c', v => v * 2);
     expect(updated).to.equal(4);
     expect(nestedObj).to.deep.equal(expected);
   });
 
   it("can set a nested property that doesn't already exist", function() {
-    let expected = Ember.Object.create({ a: { b: { c: 2, d: "I'm here" } } })
+    let expected = EmberObject.create({ a: { b: { c: 2, d: "I'm here" } } })
     const updated = update(nestedObj, 'a.b.d', () => "I'm here");
     expect(updated).to.equal("I'm here");
     expect(nestedObj).to.deep.equal(expected);
@@ -66,7 +66,7 @@ describe('update with an ember object and arrays', function() {
   let obj;
 
   beforeEach(function() {
-  obj = Ember.Object.create({
+  obj = EmberObject.create({
       a: [1, 2, 3]
     });
   });

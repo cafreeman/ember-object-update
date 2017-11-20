@@ -1,4 +1,6 @@
 /* jshint expr:true */
+import { get } from '@ember/object';
+
 import { expect } from 'chai';
 import {
   describe,
@@ -6,9 +8,6 @@ import {
   it
 } from 'mocha';
 import update from 'ember-object-update';
-import Ember from 'ember';
-
-const { get } = Ember;
 
 describe('update basic POJO', function() {
   let simpleObj;
