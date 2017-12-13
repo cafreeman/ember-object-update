@@ -53,5 +53,6 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  }
+  },
+  "types": "./index.d.ts"
 }
