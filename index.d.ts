@@ -14,4 +14,4 @@ export default function update<T, K extends keyof T>(
   obj: ComputedProperties<T>,
   key: K,
   updateFn: (property: T[K]) => T[K]
-): T;
+): T[K];
